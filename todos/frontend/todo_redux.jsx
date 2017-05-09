@@ -7,14 +7,6 @@ import Root from './components/root'
 
 document.addEventListener("DOMContentLoaded", function(){
   const appStore = configureStore();
-  window.store = appStore;
-
-  window.allTodos = allTodos;
-
-  window.receiveTodos = receiveTodos;
-  window.receiveTodo = receiveTodo;
-  window.removeTodo = removeTodo;
-  window.toggleTodo = toggleTodo;
 
   ReactDOM.render(<Root store={ appStore } />, document.getElementById('root'));
 });
